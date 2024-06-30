@@ -181,30 +181,3 @@ def handler(event, context):
             'body': json.dumps({"error": "Invalid action"})
         }
 
-# Example usage for local testing
-if __name__ == "__main__":
-    example_event = {
-        'body': json.dumps({
-            'action': 'generate_embeddings',
-            'context': {
-                'q_1': 'Machine Learning Engineer',
-                'follow_up': [
-                    'What are the requirements for a Machine Learning Engineer?',
-                    'How to prepare for a Machine Learning Engineer interview?'
-                ]
-            }
-        })
-    }
-    
-    response = handler(example_event, None)
-    print(response)
-
-    example_event_search = {
-        'body': json.dumps({
-            'action': 'search_similar_queries',
-            'query': 'Machine Learning Engineer'
-        })
-    }
-    
-    response_search = handler(example_event_search, None)
-    print(response_search)
