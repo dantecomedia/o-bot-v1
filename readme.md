@@ -60,11 +60,4 @@ Ensure the following environment variables are set:
 - `oai`: OpenAI API key.
 - `serp`: Serp API key.
 
-### Libraries
-The code uses the following libraries:
-```python
-import json
-import boto3
-import numpy as np
-from pymongo import MongoClient
-from sklearn.metrics.pairwise import cosine_similarity
+
