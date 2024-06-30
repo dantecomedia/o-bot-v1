@@ -1,0 +1,10 @@
+requests
+openai
+boto3
+joblib
+pymongo
+scikit-learn
+beautifulsoup4
+requests
+numpy
+Flask
